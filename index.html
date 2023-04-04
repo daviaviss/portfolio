@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="bugwhite.ico" type="image/x-icon">
+  <title>@daviaviss</title>
+</head>
+
+<body>
+  <canvas id="binary-background"></canvas>
+  <main>
+    <section id="cubo-section" class="full-screen-section">
+      <div id="cubo-tecnologico"></div>
+    </section>
+    <section id="sessao-dois" class="full-screen-section">
+      <div class="container">
+        <div class="terminal_toolbar">
+          <div class="butt">
+            <button class="btn btn-color" onclick="window.location.href='#cubo-section'"></button>
+            <button class="btn"></button>
+            <button class="btn"></button>
+          </div>
+          <p class="user">daviaviss@admin: ~</p>
+          <div class="add_tab" onclick="window.location.href='#sessao-tres'">
+            +
+          </div>
+        </div>
+        <div class="terminal_body">
+          <div class="terminal_promt">
+            <span class="terminal_cursor"></span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="sessao-tres" class="full-screen-section">
+      <div>
+        <span class="arrow-up" onclick="window.location.href='#sessao-dois'"></span>
+      </div>
+      <div class="card">
+        <p><span id="todolist">TODO LIST</span></p>
+        <p><span id="jaz">JAZ</span></p>
+        <p><span id="visiodonto">VISIODONTO</span></p>
+      </div>
+      <div class="arrow-down-container">
+        <span class="arrow-down" onclick="window.location.href='#sessao-quatro'"></span>
+      </div>
+    </section>
+    <section id="sessao-quatro" class="full-screen-section">
+      <div class="code-loader">
+        <span onclick="window.location.href='#sessao-tres'">{</span>
+        <div class="cartao">
+          <div class="redes-sociais">
+            <a href="https://www.instagram.com/daviaviss/" target="_blank" class="icon" id="instagram">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="#fff">
+                <path
+                  d="M12 2.163c3.204 0 3.584.012 4.849.07 1.366.062 2.633.336 3.608 1.311.975.975 1.249 2.242 1.311 3.608.058 1.265.07 1.645.07 4.849s-.012 3.584-.07 4.849c-.062 1.366-.336 2.633-1.311 3.608-.975.975-2.242 1.249-3.608 1.311-1.265.058-1.645.07-4.849.07s-3.584-.012-4.849-.07c-1.366-.062-2.633-.336-3.608-1.311-.975-.975-1.249-2.242-1.311-3.608-.058-1.265-.07-1.645-.07-4.849s.012-3.584.07-4.849c.062-1.366.336-2.633 1.311-3.608.975-.975 2.242-1.249 3.608-1.311 1.265-.058 1.645-.07 4.849-.07zm0 1.982c-3.153 0-3.509.01-4.761.065-1.344.059-2.201.32-2.985 1.104-.784.784-1.045 1.641-1.104 2.985-.055 1.252-.065 1.608-.065 4.761s.01 3.509.065 4.761c.059 1.344.32 2.201 1.104 2.985.784.784 1.641 1.045 2.985 1.104 1.252.055 1.608.065 4.761.065s3.509-.01 4.761-.065c1.344-.059 2.201-.32 2.985-1.104.784-.784 1.045-1.641 1.104-2.985.055-1.252.065-1.608.065-4.761s-.01-3.509-.065-4.761c-.059-1.344-.32-2.201-1.104-2.985-.784-.784-1.641-1.045-2.985-1.104-1.252-.055-1.608-.065-4.761-.065zm0 12.3a3.963 3.963 0 1 1 0-7.926 3.963 3.963 0 0 1 0 7.926zm0-10.543a6.58 6.58 0 1 0 0 13.16 6.58 6.58 0 0 0 0-13.16zm7.192-.222a1.482 1.482 0 1 1 0 2.964 1.482 1.482 0 0 1 0-2.964z" />
+              </svg>
+            </a>
+            <a href="https://github.com/daviaviss" target="_blank" class="icon" id="github">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="#fff">
+                <path
+                  d="M12 2C6.486 2 2 6.486 2 12c0 4.41 2.865 8.14 6.839 9.489.5.09.682-.218.682-.484 0-.238-.009-.868-.014-1.703-2.782.6-3.369-1.34-3.369-1.34-.454-1.157-1.11-1.465-1.11-1.465-.908-.62.069-.607.069-.607 1.003.071 1.532 1.031 1.532 1.031 .908 1.551 2.27 1.102 3.079.843.092-.656.356-1.102.649-1.352-2.225-.25-4.565-1.112-4.565-4.951 0 1.093.392-1.988 1.034-2.685-.104-.253-.45-1.273.098-2.655 0 0 .846-.27 2.77 1.026a9.564 9.564 0 0 1 5.054 0c1.925-1.296 2.77-1.026 2.77-1.026 .548 1.382.202 2.402.1 2.655.64.697 1.032 1.592 1.032 2.685 0 3.846-2.342 4.7-4.572 4.947.366.314.692.934.692 1.882 0 1.362-.014 2.454-.014 2.786 0 .269.18.576.688.478A9.98 9.98 0 0 0 22 12C22 6.486 17.514 2 12 2z" />
+              </svg>
+            </a>
+            <a href="https://www.linkedin.com/in/davi-augusto-vissotto-95b705215/" target="_blank" class="icon"
+              id="linkedin">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="#fff">
+                <path
+                  d="M4.98 3.5C4.98 4.88 3.87 6 2.48 6 1.09 6 0 4.88 0 3.5 0 2.12 1.09 1 2.48 1 3.87 1 4.98 2.12 4.98 3.5zM.34 22h4.29V7.46H.34V22zM7.12 7.46h4.17v2.08h.06c.58-1.1 1.99-2.27 4.11-2.27 4.38 0 5.19 2.89 5.19 6.64v7.09h-4.29v-6.34c0-1.52-.03-3.47-2.11-3.47-2.12 0-2.45 1.65-2.45 3.37v6.44H7.12V7.46z" />
+              </svg>
+            </a>
+          </div>
+        </div>
+        <span onclick="window.location.href='#sessao-tres'">}</span>
+      </div>
+    </section>
+
+    <!-- Restante das seções... -->
+  </main>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="script.js"></script>
+  <script src="binaryBackground.js"></script>
+  <script src="typing.js"></script>
+  <script>
+
+    const cardChildren = document.querySelector('.card').children;
+
+    cardChildren[0].addEventListener('click', function () {
+      window.open('https://todolist-red-two.vercel.app/', '_blank');
+    });
+
+    cardChildren[1].addEventListener('click', function () {
+      window.open('https://jazmoveisplanejados.com/', '_blank');
+    });
+
+    cardChildren[2].addEventListener('click', function () {
+      window.open('https://visiodonto.com/', '_blank');
+    });
+
+
+  </script>
+</body>
+
+</html>
