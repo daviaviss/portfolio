@@ -298,6 +298,7 @@ canvas#binary-background {
 .code-loader span {
     display: inline-block;
     animation: pulse_414 0.4s alternate infinite ease-in-out;
+    cursor: pointer;
 }
 
 .code-loader span:nth-child(odd) {
@@ -354,7 +355,7 @@ canvas#binary-background {
     }
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 500px) {
     .code-loader {
         font-size: 60px;
         gap: 15px;
@@ -362,6 +363,10 @@ canvas#binary-background {
     
     .code-loader span {
         animation-duration: 0.5s;
+    }
+
+    .arrow-down {
+        margin-top: 60px !important;
     }
 }
 
