@@ -147,8 +147,8 @@ canvas#binary-background {
 }
 
 .card {
-    width: 210px;
-    height: 254px;
+    width: 90%;
+    height: 80%;
     border-radius: 4px;
     display: flex;
     gap: 5px;
