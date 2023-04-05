@@ -19,12 +19,12 @@
       <div class="container">
         <div class="terminal_toolbar">
           <div class="butt">
-            <button class="btn btn-color" onclick="window.location.href='#cubo-section'"></button>
+            <button class="btn btn-color" onclick="scrollToSection('cubo-section')"></button>
             <button class="btn"></button>
             <button class="btn"></button>
           </div>
           <p class="user">daviaviss@admin: ~</p>
-          <div class="add_tab" onclick="window.location.href='#sessao-tres'">
+          <div class="add_tab" onclick="scrollToSection('sessao-tres')">
             +
           </div>
         </div>
@@ -36,21 +36,17 @@
       </div>
     </section>
     <section id="sessao-tres" class="full-screen-section">
-      <div>
-        <span class="arrow-up" onclick="window.location.href='#sessao-dois'"></span>
-      </div>
+      <span class="arrow-up" onclick="scrollToSection('sessao-dois')"></span>
       <div class="card">
         <p><span id="todolist">TODO LIST</span></p>
         <p><span id="jaz">JAZ</span></p>
         <p><span id="visiodonto">VISIODONTO</span></p>
       </div>
-      <div class="arrow-down-container">
-        <span class="arrow-down" onclick="window.location.href='#sessao-quatro'"></span>
-      </div>
+      <span class="arrow-down" onclick="scrollToSection('sessao-quatro')"></span>
     </section>
     <section id="sessao-quatro" class="full-screen-section">
       <div class="code-loader">
-        <span onclick="window.location.href='#sessao-tres'">{</span>
+        <span onclick="scrollToSection('sessao-tres')">{</span>
         <div class="cartao">
           <div class="redes-sociais">
             <a href="https://www.instagram.com/daviaviss/" target="_blank" class="icon" id="instagram">
@@ -74,7 +70,7 @@
             </a>
           </div>
         </div>
-        <span onclick="window.location.href='#sessao-tres'">}</span>
+        <span onclick="scrollToSection('sessao-tres')">}</span>
       </div>
     </section>
 
@@ -101,6 +97,10 @@
       window.open('https://visiodonto.com/', '_blank');
     });
 
+    function scrollToSection(sectionId) {
+      const section = document.getElementById(sectionId);
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
 
   </script>
 </body>
