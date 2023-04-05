@@ -3,6 +3,7 @@
 ---
 
 *Example of the running project:**
+
 *![2023-04-04-21-40-40](https://user-images.githubusercontent.com/63088051/229952725-e3fc40b0-57d1-4e1e-9f4d-d867beefb9ce.gif)
 
 ---
